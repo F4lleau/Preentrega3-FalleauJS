@@ -12,21 +12,118 @@
     <header class="container-fluid bg-dark position- sticky top-0">
         <ul class="nav nav-pills mb-3 py-3 container" id="pills-tab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+              <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
+              <a class="nav-link active container" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Productos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Carrito</a>
             </li>
         </ul>
+        
     </header>
-    <div class="tab-content" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+      Producto añadido al carrito!
     </div>
+    <div class="alert container position-sticky top-0 alert-primary remove" role="alert">
+      Producto eliminado del carrito!
+    </div>
+   
+    <!--main-->
+    <main class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">1
+
+        </div>
+        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <h1 class="h4 m-4 text-white">PRODUCTOS</h1>
+            <h3 class= text-white>Somos fabricantes!!</h3>
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                 <!--card-->
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h4 class="card-title pt-2 text-center text-light">Parrilla de tambor</h4>
+                        <img src="./media/parrila de tambor.jpg" class="card-img-top" alt="parrilla tambor">
+                        <div class="card-body">
+                          <p class="card-text text-white-50 description">Parrilla Chulengo más SET pala y atizador de regalo. Medidas de chulengo aprox.: 80cm alto, 90cm largo y 60cm profundo. Medidas emparrillado: 80cm x 45cm aprox.</p>
+                          <h5 class="text-primary">Precio: <span class="precio">$53000</span></h5>
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a carrito</button>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h4 class="card-title pt-2 text-center text-light">Parrilla de hierro</h4>
+                        <img src="./media/parrilla de hierro.jpg" class="card-img-top" alt="parrilla de hierro">
+                        <div class="card-body">
+                          <p class="card-text text-white-50 description">Parrilla 70 (Ancho) x 50cm (Profundo) x 14cm (Alto) Estrcutura reforzada y varillas de hierro</p>
+                          <h5 class="text-primary">Precio: <span class="precio">$10000</span></h5>
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a carrito</button>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h4 class="card-title pt-2 text-center text-light">Frente de rejas</h4>
+                        <img src="./media/frente reja corredizo.jpg" class="card-img-top" alt="frente rejas">
+                        <div class="card-body">
+                          <p class="card-text text-white-50 description">Frente de rejas completo de 10M de ancho x 2M de alto. Cuenta con porton corredizo o levadizo automatico puerta de entrada con doble cerradura y manijon paño fijo seccional columnas 100x100 rellenas con hormigon y terminaciones de 1ra calidad el precio incluye pintura e instalacion</p>
+                          <h5 class="text-primary">Precio: <span class="precio">$420000</span></h5>
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a carrito</button>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                        <h4 class="card-title pt-2 text-center text-light">Reja de hierro</h4>
+                        <img src="./media/reja para puerta.jpeg" class="card-img-top" alt="reja de hierro">
+                        <div class="card-body">
+                          <p class="card-text text-white-50 description">Puerta Reja Tubos horizontales Reforzada con Cerradura. Base de antióxido negro. Para puertas de 80 de paso. Medida final de ancho 87 cm. Grampas para amurar. Cerradura de seguridad. Marco en caño cuadrado 4x2. Con marco invertido para que abran hacia adentro son a pedido y salen un 10% más.</p>
+                          <h5 class="text-primary">Precio: <span class="precio">$54000</span></h5>
+                          <div class="d-grid gap-2">
+                            <button class="btn btn-primary button">Añadir a carrito</button>
+                          </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <!--Carrito-->
+        <div class="tab-pane fade carrito" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <table class="table table-striped table-dark">
+                <thead>
+                  <tr class="text-light">
+                    <th scope="col">#</th>
+                    <th scope="col">Productos</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                  </tr>
+                </thead>
+                <tbody class="tbody">
+      
+                </tbody>
+              </table>
+              <br><br>
+              <div class="row mx-4">
+                <div class="col">
+                  <h3 class="itemCartTotal text-white">Total:0</h3>
+                </div>
+                <div class="col d-flex justify-content-end">
+                  <button class="btn btn-success">COMPRAR</button>
+                </div>                
+              </div>
+            </div>
+        </div>
+        <footer class="bg-dark p-3 mt-5">
+            <p class="text-center m-0 text-white">P&S CONSTRUYE</p>
+        </footer>
+    </main>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
